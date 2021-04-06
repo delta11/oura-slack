@@ -1,0 +1,23 @@
+{
+  "name": "oura-slack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-setup": "nodemon --exec \"npx @google-cloud/functions-framework --target=setup --reload\"",
+    "start-timer": "nodemon --exec \"npx @google-cloud/functions-framework --target=timer --reload\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/datastore": "^6.3.1",
+    "@google-cloud/functions-framework": "^1.7.1",
+    "@slack/events-api": "^3.0.0",
+    "@slack/web-api": "^6.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
